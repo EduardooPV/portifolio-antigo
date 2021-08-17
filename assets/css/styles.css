@@ -3,7 +3,7 @@ html {
 }
 body {
     background-image: url("../imgs/bd.svg") ;
-    background-color: rgb(32, 29, 29);
+    background-color: rgb(14, 13, 13);
     color: white;
 
 }
@@ -33,11 +33,15 @@ nav {
     justify-content: space-around;
 
     background: rgba(255, 255, 255);
-    border: 2px solid #865d10;
+    border: 3px solid #F89D24;
     border-top-right-radius: 15px;  
     border-top-left-radius: 15px;  
 
     z-index: 1;
+}
+
+nav div {
+    width: 6rem;
 }
 
 nav div a{
@@ -51,6 +55,7 @@ nav div a{
 
 nav div a img {
     width: 2.5rem;
+    margin: 0.2rem 0;
 }
 
 nav div a p {
@@ -82,7 +87,7 @@ main {
     
     margin: 0 auto;
     
-    border: 3px solid white;
+    border: 3px solid #F89D24;
     border-radius: 50%;
     box-shadow: 2px 2px 10px  black;
 }
@@ -118,27 +123,28 @@ main {
 }
 
 .skills h2 {
-    background-color: rgb(15, 15, 15);
+    border-top: 2px solid #F89D24;
+    border-bottom: 2px solid #F89D24;
+    background-color:#744911;
     width: 100vw;
     padding: 1rem;
     text-align: center;
     font-size: 3rem;
-    margin: 1rem 0 3rem 0;
+    margin: 1rem 0 1rem 0;
 }
 
 .skills div {
     width: 100%;
 
     margin: 1rem;
-    padding: 1rem 2rem;
+    padding: 1.5rem 2rem;
 
     display: flex;
     align-items: center;
     justify-content: space-between;
 
-    background: rgba(255, 255, 255, 0.5);
-    border: 3px solid #865d10;
-    box-shadow: 5px 5px 9px -1px rgba(0, 0, 0, 0.25);
+    background: rgba(0, 0, 0, 0.5);
+    border: 3px solid #744911;
     border-radius: 15px;
 }
 
@@ -165,26 +171,54 @@ main {
 
 .projects h2 {
     font-size: 3rem;
-    background-color: rgb(15, 15, 15);
+    background-color: #744911;
+    border-top: 2px solid #F89D24;
+    border-bottom: 2px solid #F89D24;
     width: 100vw;
     padding: 1rem;
     text-align: center;
-    margin: 1rem 0 1rem 0;
+    margin: 1rem 0 2.2rem 0;
 }
 
 .projects__card {
     margin-bottom: 1rem;
-    background-color: rgb(0, 0, 0);
+    background-color: black;
+    
+    border-radius: 5px;
+    border: 2px solid #F89D24;
 }
 
 .projects__card > img {
+    height: 200px;
     width: 100%;
+    border-bottom: 2px solid #F89D24;
 }
 
 .projects__card p {
-    text-align: center;
-    padding: 0.5rem 0;
+    text-align: left;
+    padding: 0.5rem 1rem;
     font-size: 1.3rem;
+}
+
+.projects__card div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.projects__card div a {
+    display: flex;
+    justify-content: space-around;
+    margin-right: 0.5rem;
+    padding: 0.4rem;
+    color: black;
+    border: 1px solid #F89D24;
+    border-radius: 5px;
+    background-color: white;
+}
+
+.projects__card div a img {
+    width: 1rem;
 }
 
 .slideshow-container {
@@ -197,7 +231,7 @@ main {
 }
 
 .menu-slide {
-    width: calc(100vw - 40px);
+    width: calc(100vw - 80px);
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -205,7 +239,7 @@ main {
 
 .prev, .next {
     cursor: pointer;
-    color: white;
+    color: #F89D24;
     font-weight: bold;
     font-size: 30px;
     transition: 0.6s ease;
@@ -219,14 +253,14 @@ main {
     height: 30px;
     width: 30px;
     margin: 0 2px;
-    background-color: rgb(255, 255, 255);
+    background-color:#744911;
     border-radius: 50%;
     display: inline-block;
     transition: background-color 0.6s ease;
 }
 
 .active, .dot:hover {
-    background-color: #5c5c5c;
+    background-color:#F89D24;
 }
 
 .fade {
@@ -243,7 +277,18 @@ main {
     background-color: black;
 }
 
+.button__vejatodos {
+    font-size: 1.5rem;
+    margin-top: 2rem;
+    border: 1px solid #F89D24;
+    background-color: black;
+    color: white;
+    border-radius: 15px;
+    padding: 1rem 3rem;
+}
+
 footer {
+    border-top: 1px solid #F89D24;
     display: flex;
     flex-direction: column;
     align-items: center;
