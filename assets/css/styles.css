@@ -78,8 +78,6 @@ main {
 .home__perfil {
     display: flex;
     flex-direction: column;
-    
-    
 }
 
 .home__perfil > img {
@@ -93,7 +91,7 @@ main {
 }
 
 .home__perfil h1 {
-    font-size: 3.5rem;
+    font-size: 2.8rem;
     margin-top: 1rem;
     text-align: center;
     
@@ -102,7 +100,12 @@ main {
 .home__perfil p {
     margin: 2rem 0;
     text-align: center;
-    font-size: 1.2rem;
+    font-size: 1.1rem;
+}
+
+.home__perfil p span {
+    font-weight: bold   ;
+    color: #F89D24;
 }
 
 .home__contats {
@@ -125,7 +128,7 @@ main {
 .skills h2 {
     border-top: 2px solid #F89D24;
     border-bottom: 2px solid #F89D24;
-    background-color:#744911;
+    background-color:black;
     width: 100vw;
     padding: 1rem;
     text-align: center;
@@ -150,6 +153,7 @@ main {
 
 .skills div img {
     left: 2rem;
+    width: 3.3rem;
 }
 
 .skills div img:last-child {
@@ -157,7 +161,7 @@ main {
 }
 
 .skills div p {
-    font-size: 1.8rem;
+    font-size: 1.5rem;
     margin-left: 1rem;
 }
 
@@ -171,7 +175,7 @@ main {
 
 .projects h2 {
     font-size: 3rem;
-    background-color: #744911;
+    background-color: black;
     border-top: 2px solid #F89D24;
     border-bottom: 2px solid #F89D24;
     width: 100vw;
@@ -202,7 +206,7 @@ main {
 
 .projects__card div {
     display: flex;
-    align-items: center;
+    align-items: baseline;
     justify-content: space-between;
 }
 
