@@ -1,87 +1,98 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Luiz Eduardo Prado Veltroni</title>
 
+    <meta name="description" content="Portifólio de Luiz Eduardo Prado Veltroni, contendo os conhecimentos técnicos e projetos realizados.">
+
     <link rel="stylesheet" href="assets/css/styles.css">
     <link rel="stylesheet" href="assets/css/reset.css">
 
+    <link rel="stylesheet" href="assets/css/header.css">
+    <link rel="stylesheet" href="assets/css/home.css">
+    <link rel="stylesheet" href="assets/css/habilidades.css">
+    <link rel="stylesheet" href="assets/css/projetos.css">
+    <link rel="stylesheet" href="assets/css/footer.css">
+
+    <script defer="defer" src="js/scripts.js"></script>
+
+    <link rel="shortcut icon" href="./assets/imgs/public/favicon.ico" type="image/x-icon">
+
 </head>
-<body>
-    <header>
-        <nav>
-            <div>
-                <a href="#perfil">
-                    <img src="assets/imgs/perfil-image.png" alt="">
-                    <p>Perfil</p>
-                </a>
-            </div>
+  <body>
+      <header>
+          <nav>
+              <div>
+                  <a href="#perfil">
+                      <img src="assets/imgs/header/perfil-image.png" alt="Icone do perfil">
+                      <p>Perfil</p>
+                  </a>
+              </div>
 
-            <div>
-                <a href="#skills">
-                    <img src="assets/imgs/skills-image.png" alt="">
-                    <p>Skills</p>
-                </a>
-            </div>
+              <div>
+                  <a href="#habilidades">
+                      <img src="assets/imgs/header/habilidades-image.png" alt="Icone de habilidades">
+                      <p>Habilidades</p>
+                  </a>
+              </div>
 
-            <div>
-                <a href="#projects">
-                    <img src="assets/imgs/projetos-image.png" alt="">
-                    <p>Projetos</p>
-                </a>
-            </div>
-        </nav>
-    </header>
+              <div>
+                  <a href="#projects">
+                      <img src="assets/imgs/header/projetos-image.png" alt="Icone de projetos">
+                      <p>Projetos</p>
+                  </a>
+              </div>
+          </nav>
+      </header>
 
-    <main>
+      <main>
+          <section id="perfil" class="home">
+              <div class="home__perfil">
+                  <img  src="https://github.com/EduardooPV.png" alt="Luiz Eduardo" />
+                  
+                  <div>
+                    <h1>Luiz Eduardo Prado Veltroni</h1>
+                    <p>Olá bem vindo ao meu portifólio, meu nome é <span>Luiz Eduardo</span>, tenho <span>21 anos</span> e curso Análise e desenvolvimento de sistemas na faculdade <span>UNOPAR</span> em <span>Sorocaba - SP</span>. Focando meus estudos em técnologias <span>Front end</span>.</p>
+                  </div>
+              </div>
 
-        <section id="perfil" class="home">
-            <div class="home__perfil">
-                <img src="https://github.com/EduardooPV.png" alt="Luiz Eduardo" />
+              <div class="home__contats">
+                  <a target="_blank" href="https://github.com/EduardooPV"><img src="assets/imgs/home/github.svg" alt="GitHub"></a>
+                  <a target="_blank" href="https://www.linkedin.com/in/luiz-eduardo-prado/"><img src="assets/imgs/home/linkedin.svg" alt="LinkedIn"></a>
+                  <a href="mailto:eduardoveltroni@hotmail.com"><img src="assets/imgs/home/email.svg" alt="Email"></a>
+              </div>
+          </section>
 
-                <h1>Luiz Eduardo Prado Veltroni</h1>
+          <section id="habilidades"class="habilidades">
+              <h2>Habilidades</h2>
 
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Non dolorem hic, laboriosam molestiae <span>palavra destacada</span> exercitationem quae deleniti possimus ipsam iste? Perspiciatis culpa consequatur veritatis recusandae <span>palavra destacada</span> possimus quae reprehenderit suscipit fuga quos.</p>
-            </div>
-
-            <div class="home__contats">
-                <a target="_blank" href="https://github.com/EduardooPV"><img src="assets/imgs/github.svg" alt="GitHub"></a>
-                <a target="_blank" href="https://www.linkedin.com/in/luiz-eduardo-prado/"><img src="assets/imgs/linkedin.svg" alt="LinkedIn"></a>
-                <a href="mailto:eduardoveltroni@hotmail.com"><img src="assets/imgs/email.svg" alt="Email"></a>
-            </div>
-        </section>
-
-
-        <section id="skills" class="skills">
-            <h2>Habilidades</h2>
-
-            <div>
+              <div>
                 <div data-animation="left" >
                     <img src="assets/imgs/habilidades/html.png" alt="HTML5">
 
-                <p>HTML5</p>
+                    <p>HTML5</p>
 
-                <img src="assets/imgs/progress-html.svg" alt="">
-            </div>
+                    <img src="assets/imgs/habilidades/progress-html.svg" alt="">
+                </div>
 
                 <div data-animation="right">
                     <img src="assets/imgs/habilidades/css.png" alt="CSS3">
 
-                <p>CSS3</p>
+                    <p>CSS3</p>
 
-                <img src="assets/imgs/progress-css.svg" alt="">
-            </div>
+                    <img src="assets/imgs/habilidades/progress-css.svg" alt="">
+                </div>
 
                 <div data-animation="left">
                     <img src="assets/imgs/habilidades/js.png" alt="JavaScript">
 
-                <p>JavaScript</p>
+                    <p>JavaScript</p>
 
-                <img src="assets/imgs/progress-js.svg" alt="">
-            </div>
+                    <img src="assets/imgs/habilidades/progress-js.svg" alt="">
+                </div>
 
                 <div data-animation="right">
                     <img src="assets/imgs/habilidades/git.png" alt="Next.js">
@@ -94,85 +105,138 @@
                 <div data-animation="left">
                     <img src="assets/imgs/habilidades/react.png" alt="React">
 
-                <p>React</p>
+                    <p>React</p>
 
-                <img src="assets/imgs/progress-react-next.svg" alt="">
-            </div>
+                    <img src="assets/imgs/habilidades/progress-react-next.svg" alt="">
+                </div>
 
                 <div data-animation="right">
                     <img src="assets/imgs/habilidades/next.png" alt="Next.js">
 
-                <p>Next.js</p>
+                    <p>Next.js</p>
 
-                <img src="assets/imgs/progress-react-next.svg" alt="">
-            </div>
-        </section>
-
-        <section id="projects" class="projects">
-            
-            <h2>Projetos</h2>
-            
-            <div class="slideshow-container">
+                    <img src="assets/imgs/habilidades/progress-react-next.svg" alt="">
+                </div>
                 
-                <div class="mySlides fade">
-                    <div class="projects__card rocky">
+              </div>
+          </section>
+
+          <section id="projects"   class="projects">
+              <h2>Projetos</h2>
+              
+              <div class="slideshow-container" data-animation="left">
+                  
+                  <div class="mySlides fade">
+                    <div class="projects__card">
                         
-                        <img  src="assets/imgs/site-cienam.png" alt="Projeto Rocky">
-                        
-                        
-                        <div>
-                            <p>LP Rocky</p>
-                            
-                            <div>
-                                <a href="#"><img src="assets/imgs/link.svg" alt=""> </a>
-                                <a href="#"><img src="assets/imgs/github-brands.svg" alt=""></a>
-                            </div>
-                        </div>
-                        
-                    </div>
-                    
-                    <div class="projects__card rocky">
-                        
-                        <img  src="assets/imgs/site-exemple.png" alt="Projeto Rocky">  
+                        <img  src="assets/imgs/projetos/site-rocky.png" alt="Leading Page ROCKY">  
 
                         <div>
-                            <p>LP Cinema</p>
+                            <p>ROCKY</p>
 
                             <div>
-                                <a href="#"><img src="assets/imgs/link.svg" alt=""> </a>
-                                <a href="#"><img src="assets/imgs/github-brands.svg" alt=""></a>
+                                <a target="_blank" href="https://project-rocky.netlify.app/"><img src="assets/imgs/projetos/link.svg" alt="Icone para visitar site"> </a>
+                                <a target="_blank" href="https://github.com/EduardooPV/rocky-template"><img src="assets/imgs/projetos/github-link.svg" alt="Icone para visitar o código do site"></a>
                             </div>
                         </div>
 
                     </div>
+
+                      <div class="projects__card">
+                          
+                          <img  src="assets/imgs/projetos/site-cinelovers.png" alt="Leading Page CINELOVERS">
+                          
+                          <div>
+                              <p>CINELOVERS</p>
+                              
+                              <div>
+                                <a target="_blank" href="https://github.com/EduardooPV/projeto-rocky-3pages"><img src="assets/imgs/projetos/link.svg" alt="Icone para visitar site"> </a>
+                                <a target="_blank" href="https://project-rocky-pages.netlify.app/"><img src="assets/imgs/projetos/github-link.svg" alt="Icone para visitar o código do site"></a>
+                              </div>
+                          </div>
+                          
+                      </div>
+                      
+                  </div>
+
+                  <div class="mySlides fade">
+                      <div class="projects__card">
+                          
+                          <img  src="assets/imgs/projetos/site-devfinances.png" alt="Dev.Finance$">
+                          
+                          <div>
+                              <p>Dev.Finance$</p>
+                              
+                              <div>
+                                  <a target="_blank" href="https://projeto-dev-finances.netlify.app/#"><img src="assets/imgs/projetos/link.svg" alt=""> </a>
+                                  <a target="_blank" href="https://github.com/EduardooPV/maratona-rocketseat"><img src="assets/imgs/projetos/github-link.svg" alt=""></a>
+                              </div>
+                          </div>
+                          
+                      </div>
+                      
+                      <div class="projects__card">
+                          
+                          <img  src="assets/imgs/projetos/site-nl4.png" alt="NextLevelWeek 04">  
+
+                          <div>
+                              <p>NextLevelWeek 04</p>
+
+                              <div>
+                                  <a target="_blank" href="https://github.com/EduardooPV/next-level-week04"><img src="assets/imgs/projetos/github-link.svg" alt="Icone para visitar o código do site"></a>
+                              </div>
+                          </div>
+
+                      </div>
+                      
+                  </div>
+                  
+                  <div class="mySlides fade">
+                      <div class="projects__card">
+                          
+                          <img  src="assets/imgs/projetos/site-netflix.png" alt="Clone Netflix">
+                          
+                          <div>
+                              <p>Clone Netflix</p>
+                              
+                              <div>
+                                  <a target="_blank" href="https://github.com/EduardooPV/clone-netflix"><img src="assets/imgs/projetos/github-link.svg" alt="Icone para visitar o código do site"></a>
+                              </div>
+                          </div>
+                          
+                      </div>
+                      
+                  </div>
                     
                 </div>
-                
-            </div>
-            
-            <div style="text-align:center">
-                <div class="menu-slide">
-                    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-                    <span class="dot" onclick="currentSlide(1)"></span> 
-                    <span class="dot" onclick="currentSlide(2)"></span> 
-                    <span class="dot" onclick="currentSlide(3)"></span> 
-                    <a class="next" onclick="plusSlides(1)">&#10095;</a>
-                </div>
-            </div>
+                  
+              </div>
+              
+              <div style="text-align:center">
+                  <div class="menu-slide">
+                      <a href="#projects" class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                      <a href="#projects" class="dot" onclick="currentSlide(1)"></a> 
+                      <a href="#projects" class="dot" onclick="currentSlide(2)"></a> 
+                      <a href="#projects" class="dot" onclick="currentSlide(3)"></a> 
+                      <a href="#projects" class="next" onclick="plusSlides(1)">&#10095;</a>
+                  </div>
+              </div>
 
+              <a class="button__vejatodos" href="https://github.com/EduardooPV">Ver todos! <span><img src="./assets/imgs/projetos/arrow-link.svg" alt="Seta"></span></a>
+          </section>
+          
+      </main>
 
-            <a class="button__vejatodos" href="#">Ver todos!</a>
-        </section>
-        
-    </main>
+      <footer>
 
-    <footer>
-        <p>&copy Luiz Eduardo</p>
-        <p>20/20/2020</p>
-        <a target="_blank" href="https://github.com/EduardooPV"><img src="assets/imgs/github.svg" alt="Icone GitHub"></a>
-        
-    </footer>
+          <p>&copy Luiz Eduardo</p>
 
-    <script src="js/scripts.js"></script>
-</body>
+          <div>
+            <a target="_blank" href="https://github.com/EduardooPV"><img src="assets/imgs/footer/github.svg" alt="GitHub"></a>
+            <a target="_blank" href="https://www.linkedin.com/in/luiz-eduardo-prado/"><img src="assets/imgs/footer/linkedin.svg" alt="LinkedIn"></a>
+            <a href="mailto:eduardoveltroni@hotmail.com"><img src="assets/imgs/footer/email.svg" alt="Email"></a>
+          </div>
+
+      </footer>
+  </body>
 </html>
