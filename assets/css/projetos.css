@@ -1,0 +1,234 @@
+/* ============== PROJETOS ============== */
+.projects {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.projects h2 {
+  font-size: 3rem;
+  background: rgb(0,0,0);
+  background: radial-gradient(circle, rgba(0,0,0,1) 50%, rgba(0,212,255,0) 100%, rgba(9,9,121,0) 100%);
+  width: 100%;
+  padding: 1rem;
+  text-align: center;
+  margin-bottom: 1rem ;
+}
+
+.projects__card {
+  width: 100%;
+  margin: 1rem 0;
+  background-color: black;
+  
+  border-radius: 5px;
+  border: 2px solid #F89D24;
+}
+
+.projects__card > img {
+  width: 100%;
+  border-bottom: 2px solid #F89D24;
+}
+
+.projects__card p {
+  text-align: left;
+  padding: 0.5rem 1rem;
+  font-size: 1.5rem;
+}
+
+.projects__card div {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+}
+
+.projects__card div a {
+  display: flex;
+  justify-content: space-around;
+  margin-right: 0.5rem;
+  margin-left: 0.5rem;
+  padding: 0.4rem;
+  color: black;
+  border: 1px solid #F89D24;
+  border-radius: 5px;
+  background-color: white;
+}
+
+.projects__card div a img {
+  width: 1rem;
+}
+
+.projects__card a:hover {
+  transition: 0.3s;
+  transform: scale(1.2);
+}
+
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: 0 auto;
+
+  display: flex;
+  align-items: center;
+}
+
+.menu-slide {
+  width: calc(100vw - 80px);
+  max-width: 200px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.prev, .next {
+  cursor: pointer;
+  color: #F89D24;
+  font-weight: bold;
+  font-size: 30px;
+  transition: 0.6s ease;
+  border-radius: 50%;
+  user-select: none;
+}
+
+
+.dot {
+  cursor: pointer;
+  height: 30px;
+  width: 30px;
+  margin: 0 2px;
+  background-color:#744911;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color:#F89D24;
+}
+
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+0% { opacity: 0;}
+100% { opacity: 1;}
+}
+
+.projects__card__modal {
+  width: 100px;
+  height: 100px;
+  margin: 0 auto;
+  background-color: black;
+}
+
+.button__vejatodos {
+  font-size: 1.5rem;
+  margin: 4rem 0;
+  border: 1px solid #F89D24;
+  background-color: black;
+  color: white;
+  border-radius: 15px;
+  padding: 1rem 3rem;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  line-height: 0;
+}
+
+.button__vejatodos span {
+margin-left: 1rem;
+}
+
+.button__vejatodos:hover {
+animation: RotateXandY 0.7s both;
+transition: 0.3s;
+background: #303030;
+}
+
+@keyframes RotateXandY {
+  16.65% {transform: skew(-12deg);}
+
+  33.3% {transform: skew(10deg);}
+
+  49.95% {transform: skew(-6deg);}
+  
+  66.6% {transform: skew(4deg);}
+
+  83.25% {transform: skew(-2deg);}
+
+  100% {transform: skew(0);}
+}
+
+@media(min-width: 600px) {
+  /* ============== PROJECTS ============== */
+  .projects h2 {
+    font-size: 3.3rem;
+    margin-bottom: 3rem ;
+  }
+  
+  .projects__card p {
+    font-size: 2rem;
+  }
+  
+  .projects__card div a img {
+    width: 1.5rem;
+  }
+  
+  .projects__card div {
+    padding: 0.2rem;
+  }
+  
+  .menu-slide {
+    margin: 4rem 0 2rem 0;
+  }
+}
+
+@media(min-width: 1024px) {    
+  /* ============== PROJECTS ============== */
+  .projects h2 {
+    font-size: 4rem;
+    margin-bottom: 6rem ;
+  }
+
+  .projects__card p {
+    font-size: 1.5rem;
+  }
+
+  .slideshow-container  {
+    max-width: none;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: start;
+    gap: 20px
+  }
+
+  .menu-slide {
+    display: none;
+  }
+
+  .mySlides {
+    display: block!important;
+  }
+      
+  .slideshow-container:hover .projects__card{
+    opacity:.5;
+    filter:blur(3px);
+    transform: scale(.98);
+    box-shadow:none;
+  }
+
+  .slideshow-container:hover .projects__card:hover{
+    opacity:1;
+    transform:scale(1);
+    filter:blur(0px);
+    box-shadow:0 8px 20px 0px rgba(0,0,0,0.125);
+  }
+  
+  .button__vejatodos {
+    margin: 4rem 0 5rem 0;
+  }
+}

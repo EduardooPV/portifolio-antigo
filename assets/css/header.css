@@ -1,0 +1,60 @@
+/* ============== MENU ============== */
+nav {
+  width: 100vw;
+  bottom: 0;
+
+  position: fixed;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-around;
+
+  background: rgba(255, 255, 255);
+  border: 3px solid #F89D24;
+  border-top-right-radius: 15px;  
+  border-top-left-radius: 15px;  
+
+  z-index: 2;
+}
+
+nav div {
+  width: 6rem;
+}
+
+nav div a{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  padding: 0.2rem;
+}
+
+nav div a img {
+  width: 2.5rem;
+  margin: 0.2rem 0;
+}
+
+nav div a img:active {
+animation: RotateXandY 0.5s both;
+}
+
+nav div a p {
+  color: black;
+  font-weight: 600;
+  font-size: 1.2rem;
+}
+
+@media(min-width: 600px) {
+  nav {
+    padding: 0.5rem;
+  }
+  nav div a p {
+    font-size: 1.6rem;
+  }
+}
+
+@media(min-width: 1024px) {
+  nav {
+    display: none;
+  }
+}

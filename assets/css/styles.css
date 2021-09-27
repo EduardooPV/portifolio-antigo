@@ -1,74 +1,27 @@
+/* ============== ESTILIZAÇÃO GERAL ============== */
 html {
     scroll-behavior: smooth;
 }
 body {
-    background-image: url("../imgs/bd.svg") ;
+    background-image: url("../imgs/public/bd.svg") ;
     background-color: rgb(14, 13, 13);
     color: white;
-
 }
 
-/* SCROLL */
+/* ============== BARRA DE SCROLL ============== */
 ::-webkit-scrollbar {
-    width: 20px;
+    width: 10px;
 }
 
 ::-webkit-scrollbar-thumb {
-    background-color: #000000;
-    border-radius: 10px;
-}
-
-::-webkit-scrollbar-track {
-    background-color: #bdbdbd;
-    border-radius: 20px;
-}
-
-nav {
-    width: 100vw;
-    bottom: 0;
-
-    position: fixed;
-    display: flex;
-    align-items: flex-end;
-    justify-content: space-around;
-
-    background: rgba(255, 255, 255);
-    border: 3px solid #F89D24;
-    border-top-right-radius: 15px;  
-    border-top-left-radius: 15px;  
-
-    z-index: 1;
-}
-
-nav div {
-    width: 6rem;
-}
-
-nav div a{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-
-    padding: 0.2rem;
-}
-
-nav div a img {
-    width: 2.5rem;
-    margin: 0.2rem 0;
-}
-
-nav div a p {
-    color: black;
-    font-weight: 600;
-    font-size: 1.2rem;
+  background-color: #717171;
+  border-radius: 15px;
 }
 
 main {
     margin: 0 auto;
     width: calc(100% - 40px);
-
-    margin-top: 1.5rem;
+    max-width: 1200px;
 }
 
 /*================= About animation =================*/
@@ -90,220 +43,20 @@ main {
   transform: translate3d(0px , 0px, 0px);
 }
 
-.home__perfil p {
-    margin: 2rem 0;
-    text-align: center;
-    font-size: 1.1rem;
-}
-
-.home__perfil p span {
-    font-weight: bold   ;
-    color: #F89D24;
-}
-
-.home__contats {
-    display: flex;
-    justify-content: space-around;
-}
-
-.home__contats a img {
-    width: 4rem;
-}
-
-.skills {
-    height: 100vh;
-
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.skills h2 {
-    border-top: 2px solid #F89D24;
-    border-bottom: 2px solid #F89D24;
-    background-color:black;
-    width: 100vw;
-    padding: 1rem;
-    text-align: center;
-    font-size: 3rem;
-    margin: 1rem 0 1rem 0;
-}
-
-.skills div {
-    width: 100%;
-
-    margin: 1rem;
-    padding: 1.5rem 2rem;
-
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-
-    background: rgba(0, 0, 0, 0.5);
-    border: 3px solid #744911;
-    border-radius: 15px;
-}
-
-.skills div img {
-    left: 2rem;
-    width: 3.3rem;
-}
-
-.skills div img:last-child {
-    width: 3rem;
-}
-
-.skills div p {
-    font-size: 1.5rem;
-    margin-left: 1rem;
-}
-
-.projects {
-    height: 100vh;
-
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.projects h2 {
-    font-size: 3rem;
-    background-color: black;
-    border-top: 2px solid #F89D24;
-    border-bottom: 2px solid #F89D24;
-    width: 100vw;
-    padding: 1rem;
-    text-align: center;
-    margin: 1rem 0 2.2rem 0;
-}
-
-.projects__card {
-    margin-bottom: 1rem;
-    background-color: black;
-    
-    border-radius: 5px;
-    border: 2px solid #F89D24;
-}
-
-.projects__card > img {
-    height: 200px;
-    width: 100%;
-    border-bottom: 2px solid #F89D24;
-}
-
-.projects__card p {
-    text-align: left;
-    padding: 0.5rem 1rem;
-    font-size: 1.3rem;
-}
-
-.projects__card div {
-    display: flex;
-    align-items: baseline;
-    justify-content: space-between;
-}
-
-.projects__card div a {
-    display: flex;
-    justify-content: space-around;
-    margin-right: 0.5rem;
-    padding: 0.4rem;
-    color: black;
-    border: 1px solid #F89D24;
-    border-radius: 5px;
-    background-color: white;
-}
-
-.projects__card div a img {
-    width: 1rem;
-}
-
-.slideshow-container {
-    max-width: 1000px;
-    position: relative;
+/* ============== BREAKPOINT 600px ============== */
+@media(min-width: 600px) {
+  main {
     margin: 0 auto;
+    width: calc(100% - 80px);
 
-    display: flex;
-    align-items: center;
-}
-
-.menu-slide {
-    width: calc(100vw - 80px);
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.prev, .next {
-    cursor: pointer;
-    color: #F89D24;
-    font-weight: bold;
-    font-size: 30px;
-    transition: 0.6s ease;
-    border-radius: 50%;
-    user-select: none;
-}
-
-
-.dot {
-    cursor: pointer;
-    height: 30px;
-    width: 30px;
-    margin: 0 2px;
-    background-color:#744911;
-    border-radius: 50%;
-    display: inline-block;
-    transition: background-color 0.6s ease;
-}
-
-.active, .dot:hover {
-    background-color:#F89D24;
-}
-
-.fade {
-    -webkit-animation-name: fade;
-    -webkit-animation-duration: 1.5s;
-    animation-name: fade;
-    animation-duration: 1.5s;
-}
-
-.projects__card__modal {
-    width: 100px;
-    height: 100px;
-    margin: 0 auto;
-    background-color: black;
-}
-
-.button__vejatodos {
-    font-size: 1.5rem;
-    margin-top: 2rem;
-    border: 1px solid #F89D24;
-    background-color: black;
-    color: white;
-    border-radius: 15px;
-    padding: 1rem 3rem;
-}
-
-footer {
-    border-top: 1px solid #F89D24;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: flex-start;
-    background-color: rgb(49, 49, 49);
-    color: white;
-    width: 100vw;
-    height: 220px;
-}
-
-footer p {
-    font-size: 1.2rem;
-}
-
-footer p:first-child {
     margin-top: 1.5rem;
+  }
 }
 
-footer img {
-    width: 50px;
+/* ============== BREAKPOINT 1024px ============== */
+@media(min-width: 1024px) {
+  /* ============== MAIN ============== */
+  main {
+    width: calc(100% - 120px);
+  }
 }

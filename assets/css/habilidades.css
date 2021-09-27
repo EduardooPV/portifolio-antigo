@@ -1,0 +1,112 @@
+/* ============== habilidades ============== */
+.habilidades {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.habilidades h2 {
+  background: rgb(0,0,0);
+  background: radial-gradient(circle, rgba(0,0,0,1) 50%, rgba(0,212,255,0) 100%, rgba(9,9,121,0) 100%);
+  width: 100%;
+  padding: 1rem;
+  text-align: center;
+  font-size: 3rem;
+  margin-bottom: 1rem ;
+}
+.habilidades div {
+width: 100%;
+margin-bottom: 5rem;
+}
+
+.habilidades div div{
+  width: 100%;
+
+  margin: 1rem 0;
+  padding: 1.5rem 2rem;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  background: rgba(0, 0, 0, 0.5);
+  border: 3px solid #744911;
+  border-radius: 15px;
+}
+
+.habilidades div div img {
+  left: 2rem;
+  width: 3.3rem;
+}
+
+.habilidades div div img:last-child {
+  width: 3rem;
+}
+
+.habilidades div div p {
+  font-size: 1.5rem;
+  margin-left: 1rem;
+}
+
+.habilidades div div:hover{
+animation: CardBorder both;
+animation-duration: 0.15s;
+}
+
+/*================= Animation Card =================*/
+@keyframes CardBorder {
+0%   {border-color:   #744911}
+100% {border-color:  #F89D24}
+}
+
+.habilidades div div:hover img:last-child{
+  animation: RotateCircle 0.8s both;
+}
+
+@keyframes RotateCircle {
+  0% { transform: rotateX(0deg);}
+  100% { transform: rotateX(360deg);}
+}
+
+
+
+@media(min-width: 600px) {
+  /* ============== habilidades ============== */
+  .habilidades h2 {
+    font-size: 3.3rem;
+    margin-bottom: 3rem ;
+  }
+
+  .habilidades div div {
+    justify-content: space-around;
+  }
+  
+  .habilidades div div img {
+    width:  4rem;
+  }
+  
+  .habilidades div div img:last-child {
+    width: 4rem;
+  }
+  .habilidades div div p {
+    font-size: 1.9rem;
+  }
+}
+
+@media(min-width: 1024px) {
+  /* ============== SKILS ============== */
+  .habilidades h2 {
+    margin-bottom: 6rem ;
+    font-size: 4rem;
+  }
+  .habilidades div {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+  }
+  .habilidades div div {
+    flex: 1 0 500px;
+    margin: 0;
+    width: 100%;    
+  }
+}
