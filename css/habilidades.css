@@ -36,6 +36,11 @@ margin-bottom: 5rem;
 
 .habilidades div div img {
   left: 2rem;
+  width: 3.3rem;
+}
+
+.habilidades div div img:last-child {
+  width: 3rem;
 }
 
 .habilidades div div p {
@@ -75,7 +80,14 @@ animation-duration: 0.15s;
   .habilidades div div {
     justify-content: space-around;
   }
-
+  
+  .habilidades div div img {
+    width:  4rem;
+  }
+  
+  .habilidades div div img:last-child {
+    width: 4rem;
+  }
   .habilidades div div p {
     font-size: 1.9rem;
   }

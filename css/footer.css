@@ -18,6 +18,10 @@ footer p:first-child {
   margin-top: 3rem;
 }
 
+footer img {
+  width: 30px;
+}
+
 footer img:hover {
 animation: HoverIcon 0.3s both;
 }
