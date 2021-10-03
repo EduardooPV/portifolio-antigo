@@ -70,11 +70,6 @@ animation: RotateImg 0.5s infinite;
   gap: 50px;
 }
 
-.home__contats a img {
-  width: 4rem;
-}
-
-
 .home__contats a img:hover{
 animation: HoverIcon 0.3s both;
 }
@@ -149,7 +144,6 @@ animation: HoverIcon 0.3s both;
     gap: 0;
   }
   .home__contats a img {
-    width: 4rem;
     margin: 2rem 0;
   }
 }
