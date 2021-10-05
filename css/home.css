@@ -19,7 +19,7 @@
 .home__perfil {
   display: flex;
   flex-direction: column;
-  margin-top: 1rem;
+  margin-top: 2rem;
 }
 
 .home__perfil > img {
@@ -32,7 +32,7 @@
   box-shadow: 2px 2px 10px  black;
 }
 
-.home__perfil > img:hover {
+.home__perfil > img {
 animation: RotateImg 0.5s infinite;
 }
 
@@ -40,7 +40,7 @@ animation: RotateImg 0.5s infinite;
 0% {
   transform: scale(1); }
 50% {
-  transform: scale(0.98); } 
+  transform: scale(0.99); } 
 100% {
   transform: scale(1); } 
 }
@@ -64,10 +64,31 @@ animation: RotateImg 0.5s infinite;
   color: #F89D24;
 }
 
+.home__perfil a {
+  width: 80%;
+  margin: 2rem auto;
+  padding: 1rem 2rem;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  font-size: 1.2rem;
+  border: 1px solid white;
+  border-radius: 5px;
+  color: #F89D24;
+}
+
+.home__perfil a:hover {
+  transition: all 0.3s;
+  background-color: #F89D24;
+  color: white;
+}
+
 .home__contats {
   display: flex;
   justify-content: center;
-  gap: 50px;
+  gap: 10vw;
 }
 
 .home__contats a img {
@@ -100,6 +121,10 @@ animation: HoverIcon 0.3s both;
     font-size: 1.3rem;
     line-height: 25px;
     margin-bottom: 4rem;
+  }
+
+  .home__perfil a {
+    width: 50%;
   }
 }
 
@@ -139,6 +164,9 @@ animation: HoverIcon 0.3s both;
   }
   .home__perfil p {
     margin: 0;
+  }
+  .home__perfil a {
+    width: 80%;
   }
   .home__perfil div {
     max-width: 40%;

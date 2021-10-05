@@ -1,11 +1,11 @@
 /* ============== PROJETOS ============== */
-.projects {
+.projetos {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-.projects h2 {
+.projetos h2 {
   font-size: 3rem;
   background: rgb(0,0,0);
   background: radial-gradient(circle, rgba(0,0,0,1) 50%, rgba(0,212,255,0) 100%, rgba(9,9,121,0) 100%);
@@ -15,34 +15,34 @@
   margin-bottom: 1rem ;
 }
 
-.projects__card {
+.projetos__slide__card {
   width: 100%;
   margin: 1rem 0;
   background-color: black;
   
   border-radius: 5px;
-  border: 2px solid #F89D24;
+  border: 1px solid #F89D24;
 }
 
-.projects__card > img {
+.projetos__slide__card > img {
   width: 100%;
   height: 100%;
-  border-bottom: 2px solid #F89D24;
+  border-bottom: 1px solid #F89D24;
 }
 
-.projects__card p {
+.projetos__slide__card p {
   text-align: left;
   padding: 0.5rem 1rem;
   font-size: 1.5rem;
 }
 
-.projects__card div {
+.projetos__slide__card div {
   display: flex;
   align-items: baseline;
   justify-content: space-between;
 }
 
-.projects__card div a {
+.projetos__slide__card div a {
   display: flex;
   justify-content: space-around;
   margin-right: 0.5rem;
@@ -54,16 +54,16 @@
   background-color: white;
 }
 
-.projects__card div a img {
+.projetos__slide__card div a img {
   width: 1rem;
 }
 
-.projects__card a:hover {
+.projetos__slide__card a:hover {
   transition: 0.3s;
   transform: scale(1.2);
 }
 
-.slideshow-container {
+.projetos__slide__container {
   max-width: 1000px;
   position: relative;
   margin: 0 auto;
@@ -72,7 +72,7 @@
   align-items: center;
 }
 
-.menu-slide {
+.projetos__slide__menu {
   width: calc(100vw - 80px);
   max-width: 200px;
   display: flex;
@@ -89,7 +89,6 @@
   border-radius: 50%;
   user-select: none;
 }
-
 
 .dot {
   cursor: pointer;
@@ -118,7 +117,7 @@
 100% { opacity: 1;}
 }
 
-.projects__card__modal {
+.projetos__slide__card__modal {
   width: 100px;
   height: 100px;
   margin: 0 auto;
@@ -128,11 +127,12 @@
 .button__vejatodos {
   font-size: 1.5rem;
   margin: 4rem 0;
-  border: 1px solid #F89D24;
-  background-color: black;
-  color: white;
+  padding: 1.8rem 4rem;
+
+  font-size: 1.2rem;
+  border: 1px solid white;
   border-radius: 15px;
-  padding: 1rem 3rem;
+  color: #F89D24;
 
   display: flex;
   align-items: center;
@@ -144,62 +144,49 @@
 margin-left: 1rem;
 }
 
-.button__vejatodos:hover {
-animation: RotateXandY 0.7s both;
-transition: 0.3s;
-background: #303030;
-}
-
-@keyframes RotateXandY {
-  16.65% {transform: skew(-12deg);}
-
-  33.3% {transform: skew(10deg);}
-
-  49.95% {transform: skew(-6deg);}
-  
-  66.6% {transform: skew(4deg);}
-
-  83.25% {transform: skew(-2deg);}
-
-  100% {transform: skew(0);}
+.button__vejatodos:hover { 
+  transition: all 0.3s;
+  background-color: #F89D24;
+  color: white;
+  stroke: #FFFFFF;
 }
 
 @media(min-width: 600px) {
-  /* ============== PROJECTS ============== */
-  .projects h2 {
+  /* ============== Projetos ============== */
+  .projetos h2 {
     font-size: 3.3rem;
     margin-bottom: 3rem ;
   }
   
-  .projects__card p {
+  .projetos__slide__card p {
     font-size: 2rem;
   }
   
-  .projects__card div a img {
+  .projetos__slide__card div a img {
     width: 1.5rem;
   }
   
-  .projects__card div {
+  .projetos__slide__card div {
     padding: 0.2rem;
   }
   
-  .menu-slide {
+  .projetos__slide__menu {
     margin: 4rem 0 2rem 0;
   }
 }
 
 @media(min-width: 1024px) {    
-  /* ============== PROJECTS ============== */
-  .projects h2 {
+  /* ============== Projetos ============== */
+  .projetos h2 {
     font-size: 4rem;
     margin-bottom: 6rem ;
   }
 
-  .projects__card p {
+  .projetos__slide__card p {
     font-size: 1.5rem;
   }
 
-  .slideshow-container  {
+  .projetos__slide__container  {
     max-width: none;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -207,22 +194,22 @@ background: #303030;
     gap: 20px
   }
 
-  .menu-slide {
+  .projetos__slide__menu {
     display: none;
   }
 
-  .mySlides {
+  .projetos__slide__sessao {
     display: block!important;
   }
       
-  .slideshow-container:hover .projects__card{
+  .projetos__slide__container:hover .projetos__slide__card{
     opacity:.5;
     filter:blur(3px);
     transform: scale(.98);
     box-shadow:none;
   }
 
-  .slideshow-container:hover .projects__card:hover{
+  .projetos__slide__container:hover .projetos__slide__card:hover{
     opacity:1;
     transform:scale(1);
     filter:blur(0px);

@@ -78,7 +78,7 @@ animation-duration: 0.15s;
   }
 
   .habilidades div div {
-    justify-content: space-around;
+    justify-content: space-between;
   }
   
   .habilidades div div img {
@@ -103,6 +103,7 @@ animation-duration: 0.15s;
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 30px;
+    margin-bottom: 10rem;
   }
   .habilidades div div {
     flex: 1 0 500px;
