@@ -86,8 +86,15 @@ textarea{
 }
 
 .footer__contato div {
+  width: 100%;
   display: flex;
   margin: 0.5rem 0;
+  padding: 0.2rem 1rem;
+  border-radius: 10px;
+}
+
+.footer__contato div:hover {
+  background-color: #535353;
 }
 
 .footer__contato div img {
@@ -116,6 +123,10 @@ textarea{
     width: calc(100% - 100px);
   }
 
+  .footer__contato div {
+    width: 50%;
+  }
+
   form {
     margin: 0;
   }
@@ -139,6 +150,10 @@ textarea{
     flex-direction: row;
     justify-content: space-around;
     padding: 1rem;
+  }
+
+  .footer__contato div {
+    width: 100%;
   }
 
   form {

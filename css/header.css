@@ -196,6 +196,13 @@
 }
 
 @media(min-width: 769px) {
+  #header__navbar {
+    width: 40%;
+    max-width: 320px;
+
+    right: 0;
+  }
+
   .open #header__navbar ul li {
     text-align: end;
   }

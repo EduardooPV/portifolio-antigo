@@ -1,30 +1,13 @@
 // SLIDES
-var slideIndex = 1;
-projetos__slide__container(slideIndex);
-
-function plusSlides(n) {
-  projetos__slide__container(slideIndex += n);
-}
-
-function currentSlide(n) {
-  projetos__slide__container(slideIndex = n);
-}
-
-function projetos__slide__container(n) {
-  var i;
-  var slides = document.getElementsByClassName("projetos__slide__sessao");
-  var dots = document.getElementsByClassName("dot");
-  if (n > slides.length) {slideIndex = 1}    
-  if (n < 1) {slideIndex = slides.length}
-  for (i = 0; i < slides.length; i++) {
-      slides[i].style.display = "none";  
-  }
-  for (i = 0; i < dots.length; i++) {
-      dots[i].className = dots[i].className.replace(" active", "");
-  }
-  slides[slideIndex-1].style.display = "block";  
-  dots[slideIndex-1].className += " active";
-}
+//Carousel
+new Glide(".images", {
+  type: 'carousel',
+  autoplay: 5000,
+  breakpoints:({
+    768: { perView: 1 },
+    3000: { perView: 2 }
+  })
+}).mount()
 
 // ANIMAÇÃO DAS DIV
 const target = document.querySelectorAll('[data-animation]')

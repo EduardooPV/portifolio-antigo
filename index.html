@@ -18,6 +18,10 @@
   <link rel="stylesheet" href="./css/footer.css">
 
   <link rel="shortcut icon" href="././imgs/public/favicon.ico" type="image/x-icon">
+
+  <script src="./js/glide.min.js"></script>
+  <link rel="stylesheet" href="./css/glide.theme.min.css">
+  <link rel="stylesheet" href="./css/glide.core.min.css">
   
   <script defer="defer" src="js/scripts.js"></script>
 
@@ -83,51 +87,51 @@
 
         <div>
           <div data-animation="left">
-            <img src="./imgs/habilidades/html.webp" alt="HTML5">
+            <img src="./imgs/habilidades/html.webp" alt="HTML5" aria-hidden="true">
 
             <p>HTML5</p>
 
-            <img src="./imgs/habilidades/progress-html.svg" alt="">
+            <img src="./imgs/habilidades/progress-html.svg" alt="100%" aria-hidden="true">
           </div>
 
           <div data-animation="right">
-            <img src="./imgs/habilidades/css.webp" alt="CSS3">
+            <img src="./imgs/habilidades/css.webp" alt="CSS3" aria-hidden="true">
 
             <p>CSS3</p>
 
-            <img src="./imgs/habilidades/progress-css.svg" alt="">
+            <img src="./imgs/habilidades/progress-css.svg" alt="95%" aria-hidden="true">
           </div>
 
           <div data-animation="left">
-            <img src="./imgs/habilidades/js.webp" alt="JavaScript">
+            <img src="./imgs/habilidades/js.webp" alt="JavaScript" aria-hidden="true">
 
             <p>JavaScript</p>
 
-            <img src="./imgs/habilidades/progress-js.svg" alt="">
+            <img src="./imgs/habilidades/progress-js.svg" alt="75%" aria-hidden="true">
           </div>
 
           <div data-animation="right">
-            <img src="./imgs/habilidades/git.webp" alt="Next.js">
+            <img src="./imgs/habilidades/git.webp" alt="Git / Github" aria-hidden="true">
 
             <p>Git / GitHub</p>
 
-            <img src="./imgs/habilidades/progress-js.svg" alt="">
+            <img src="./imgs/habilidades/progress-js.svg" alt="75%" aria-hidden="true">
           </div>
 
           <div data-animation="left">
-            <img src="./imgs/habilidades/react.webp" alt="React">
+            <img src="./imgs/habilidades/react.webp" alt="React" aria-hidden="true">
 
             <p>React</p>
 
-            <img src="./imgs/habilidades/progress-react-next.svg" alt="">
+            <img src="./imgs/habilidades/progress-react-next.svg" alt="25%" aria-hidden="true">
           </div>
 
           <div data-animation="right">
-            <img src="./imgs/habilidades/next.webp" alt="Next.js">
+            <img src="./imgs/habilidades/next.webp" alt="Next.js" aria-hidden="true">
 
             <p>Next.js</p>
 
-            <img src="./imgs/habilidades/progress-react-next.svg" alt="">
+            <img src="./imgs/habilidades/progress-react-next.svg" alt="25%" aria-hidden="true">
           </div>
 
         </div>
@@ -137,110 +141,101 @@
       <section id="projetos" class="projetos">
         <h2>Projetos</h2>
 
-        <div class="projetos__slide__container" data-animation="left">
+        <div class="images glide" data-animation="left">
+          <div class="glide__track" data-glide-el="track">
+            <ul class="glide__slides">
 
-          <div class="projetos__slide__sessao fade">
-            <div class="projetos__slide__card">
-
-              <img src="./imgs/projetos/site-rocky.webp" alt="Leading Page ROCKY">
-
-              <div>
-                <p>ROCKY</p>
-
-                <div>
-                  <a target="_blank" rel=”noopener” href="https://project-rocky.netlify.app/"><img
-                      src="./imgs/projetos/link.svg" alt="Icone para visitar site"> </a>
-                  <a target="_blank" rel=”noopener” href="https://github.com/EduardooPV/rocky-template"><img
-                      src="./imgs/projetos/github-link.svg" alt="Icone para visitar o código do site"></a>
+              <li class="glide__slide">
+                <p class="glice__title">
+                  Next Level Week 04
+                </p>
+                <img src="./imgs/projetos/site-nl4.webp" alt="Site NextLevelWeek04">
+                <div class="glice__description">
+                  <p class="glice__content">
+                    Aplicação funciona como um cronômetro, em que cada missão concluida você tem que realizar um desafio de uma forma gameficada. 
+                  </p>
+                  <div class="glice__contact">
+                    <a href="https://github.com/EduardooPV/next-level-week04"><img src="imgs/projetos/github-link.svg" alt="Icone Github"></a>
+                  </div>
                 </div>
-              </div>
+              </li>
 
-            </div>
-
-            <div class="projetos__slide__card">
-
-              <img src="./imgs/projetos/site-cinelovers.webp" alt="Leading Page CINELOVERS">
-
-              <div>
-                <p>CINELOVERS</p>
-
-                <div>
-                  <a target="_blank" rel=”noopener” href="https://project-rocky-pages.netlify.app/"><img
-                      src="./imgs/projetos/link.svg" alt="Icone para visitar site"> </a>
-                  <a target="_blank" rel=”noopener” href="https://github.com/EduardooPV/projeto-rocky-3pages"><img
-                      src="./imgs/projetos/github-link.svg" alt="Icone para visitar o código do site"></a>
+              <li class="glide__slide">
+                <p class="glice__title">
+                  Dev.finance$
+                </p>
+                <img src="./imgs/projetos/site-devfinances.webp" alt="Site Dev.Finance$">
+                <div class="glice__description">
+                  <p class="glice__content">
+                    Uma carteira digital que calcula os saldos automaticamente, conforme você adiciona e remove dinheiro
+                  </p>
+                  <div class="glice__contact">
+                    <a href="https://github.com/EduardooPV/maratona-rocketseat"><img src="imgs/projetos/github-link.svg" alt="Icone Github"></a>
+                    <a href="https://projeto-dev-finances.netlify.app/"><img src="imgs/projetos/link.svg" alt="Icone Link"></a>
+                  </div>
                 </div>
-              </div>
+              </li>
 
-            </div>
+              <li class="glide__slide">
+                <p class="glice__title">
+                  ROCKY
+                </p>
+                <img src="./imgs/projetos/site-rocky.webp" alt="Site ROCKY">
+                <div class="glice__description">
+                  <p class="glice__content">
+                    Landing page de uma das maiores empresas de Marketing Digital do Brasil, essa LP foi desenvolvida para um processo seletivo.
+                  </p>
+                  <div class="glice__contact">
+                    <a href="https://github.com/EduardooPV/rocky-processo-seletivo"><img src="imgs/projetos/github-link.svg" alt="Icone Github"></a>
+                    <a href="https://project-rocky.netlify.app/"><img src="imgs/projetos/link.svg" alt="Icone Link"></a>
+                  </div>
+                </div>
+              </li>
 
+              <li class="glide__slide">
+                <p class="glice__title">
+                  Cinelovers
+                </p>
+                <img src="./imgs/projetos/site-cinelovers.webp" alt="Site Cinelovers">
+                <div class="glice__description">
+                  <p class="glice__content">
+                    Catologo dos principais filmes em alta com legenda/atores (estático), também desenvolvida para um processo seletivo.
+                  </p>
+                  <div class="glice__contact">
+                    <a href="https://github.com/EduardooPV/rocky-processo-seletivo2"><img src="imgs/projetos/github-link.svg" alt="Icone Github"></a>
+                    <a href="https://project-rocky-pages.netlify.app/"><img src="imgs/projetos/link.svg" alt="Icone Link"></a>
+                  </div>
+                </div>
+              </li>
+
+              <li class="glide__slide">
+                <p class="glice__title">
+                  Clone Netflix
+                </p>
+                <img src="./imgs/projetos/site-netflix.webp" alt="Site Clone da Netflix">
+                <div class="glice__description">
+                  <p class="glice__content">
+                    Um clone da Netflix usando Bootstrap e Owl para o carrosel, desenvolvido durante um curso.
+                  </p>
+                  <div class="glice__contact">
+                    <a href="https://github.com/EduardooPV/clone-netflix"><img src="imgs/projetos/github-link.svg" alt="Icone Github"></a>
+                    <a href="https://clone-netflix-owl.netlify.app/"><img src="imgs/projetos/link.svg" alt="Icone Link"></a>
+                  </div>
+                </div>
+              </li>
+
+            </ul>
           </div>
-
-          <div class="projetos__slide__sessao fade">
-            <div class="projetos__slide__card">
-
-              <img src="./imgs/projetos/site-devfinances.webp" alt="Dev.Finance$">
-
-              <div>
-                <p>Dev.Finance$</p>
-
-                <div>
-                  <a target="_blank" rel=”noopener” href="https://projeto-dev-finances.netlify.app/#"><img
-                      src="./imgs/projetos/link.svg" alt=""> </a>
-                  <a target="_blank" rel=”noopener” href="https://github.com/EduardooPV/maratona-rocketseat"><img
-                      src="./imgs/projetos/github-link.svg" alt=""></a>
-                </div>
-              </div>
-
-            </div>
-
-            <div class="projetos__slide__card">
-
-              <img src="./imgs/projetos/site-nl4.webp" alt="NextLevelWeek 04">
-
-              <div>
-                <p>NextLevelWeek 04</p>
-
-                <div>
-                  <a target="_blank" rel=”noopener” href="https://github.com/EduardooPV/next-level-week04"><img
-                      src="./imgs/projetos/github-link.svg" alt="Icone para visitar o código do site"></a>
-                </div>
-              </div>
-
-            </div>
-
+  
+          <div class="glide__arrows" data-glide-el="controls">
+            <button class="glide__arrow glide__arrow--left" data-glide-dir="<"> 
+              <img src="./imgs/projetos/arrow-left.svg" alt="Seta para esquerda">
+            </button>
+            <button class="glide__arrow glide__arrow--right" data-glide-dir=">">
+              <img src="./imgs/projetos/arrow-right.svg" alt="Seta para direita">
+            </button>
           </div>
-
-          <div class="projetos__slide__sessao fade">
-            <div class="projetos__slide__card">
-
-              <img src="./imgs/projetos/site-netflix.webp" alt="Clone Netflix">
-
-              <div>
-                <p>Clone Netflix</p>
-
-                <div>
-                  <a target="_blank" rel=”noopener” href="https://github.com/EduardooPV/clone-netflix"><img
-                      src="./imgs/projetos/github-link.svg" alt="Icone para visitar o código do site"></a>
-                </div>
-              </div>
-
-            </div>
-
-          </div>
-
-        </div>
-
-        </div>
-
-        <div style="text-align:center">
-          <div class="projetos__slide__menu">
-            <a href="#projetos" class="prev" onclick="plusSlides(-1)">&#10094;</a>
-            <a href="#projetos" class="dot" onclick="currentSlide(1)"></a>
-            <a href="#projetos" class="dot" onclick="currentSlide(2)"></a>
-            <a href="#projetos" class="dot" onclick="currentSlide(3)"></a>
-            <a href="#projetos" class="next" onclick="plusSlides(1)">&#10095;</a>
-          </div>
+  
         </div>
 
         <a class="button__vejatodos" href="https://github.com/EduardooPV">Ver todos!</a>
@@ -272,7 +267,7 @@
         <div class="footer__contato">
 
           <div>
-            <img src="./imgs/footer/user.svg" alt="Icone de usuário">
+            <img src="./imgs/footer/user.svg" alt="Icone de usuário" aria-hidden="true">
             <div>
               <h3>Nome</h3>
               <p>Luiz Eduardo Prado Veltroni</p>
@@ -280,7 +275,7 @@
           </div>
 
           <div>
-            <img src="./imgs/footer/phone.svg" alt="Icone celular">
+            <img src="./imgs/footer/phone.svg" alt="Icone celular" aria-hidden="true">
             <div>
               <h3>Telefone</h3>
               <p>(15)98189-7613</p>
@@ -288,7 +283,7 @@
           </div>
 
           <div>
-            <img src="./imgs/footer/email.svg" alt="Icone email">
+            <img src="./imgs/footer/email.svg" alt="Icone email" aria-hidden="true">
             <div>
               <h3>Email</h3>
               <p>eduardoveltroni@hotmail.com</p>
@@ -296,7 +291,7 @@
           </div>
 
           <div>
-            <img src="./imgs/footer/map.svg" alt="Icone email">
+            <img src="./imgs/footer/map.svg" alt="Icone email" aria-hidden="true">
             <div>
               <h3>Localidade</h3>
               <p>Sorocaba - SP</p>
